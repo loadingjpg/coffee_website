@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #523a28;
+}
+section{
+    padding: 2rem 9%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: .5s ease;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo span{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+}
+.header .nav a{
+    margin: .75rem;
+    color: #fff;
+}
+.home{
+    background-image: url('./img/cup-coffee-with-pile-coffee-beans.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 680px;
+
+}
+.home .content h3{
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+}
+.home .content h1{
+    font-size: 3rem;
+    color: #fff;
+    margin: 1rem;
+}
+.home .content p{
+    color: #fff;
+    text-align: center;
+}
+.home .content a{
+    margin-top: .75rem;
+    color: #fff;
+    background: #6D4428;
+    padding: .65rem 1.5rem;
+    border-radius: 4px;
+    transition: .3s ease;
+}
+.home .content a:hover{
+    background: #2d1c0c;
+    color: #fff;
+}
+.about{
+    display: flex;
+    background: #523a28;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+.about .about-img{
+    max-width: 50%;
+}
+.about .about-img img{
+    width: 100%;
+}
+.about .about-text h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.menu h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+.menu .container-menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.menu .box{
+    width: 280px;
+    height: 380px;
+    background: #f3f3f3;
+}
+.menu .box .menu-img{
+    width: 100%;
+    height: 55%;
+}
+.menu .box .menu-img img{
+    width: 100%;
+    height: 100%;
+}
+.menu .box .text-menu{
+    margin: 0 2rem;
+    height: 45%;
+}
+.menu .box .text-menu h6{
+    color: rgba(0, 0, 0, .3);
+    margin-top: .75rem;
+}
+.menu .box .text-menu h4{
+    margin: .25rem 0;
+}
+.menu .box .text-menu p{
+    font-size: .75rem;
+}
+.menu .box .text-menu .price{
+    display: flex;
+    margin-top: 0.75rem;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+.menu .box .text-menu .price .text-price{
+    margin-top: 0.75rem;
+    color: #f3cc3c;
+}
+.menu .box .text-menu .price .price-icon{
+    color: rgba(0, 0, 0, .2);
+    margin-top: .75rem;
+}
+.menu .box .text-menu .price .price-icon i{
+    margin: .1rem;
+    cursor: pointer;
+}
+.testimonials h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+.testimonials .container-testimonials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonials .container-testimonials .card{
+    width: 340px;
+    height: 320px;
+    background: #176fbe;
+}
+.testimonials .container-testimonials .card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: -4rem;
+    object-fit: cover;
+    border: 20px solid #523a28;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonials .container-testimonials .card h3{
+    text-align: center;
+    margin-top: -2rem;
+    color: #fff;
+}
+.testimonials .container-testimonials .card .icon-star{
+    display: flex;
+    justify-content: center;
+    margin: .75rem;
+}
+.testimonials .container-testimonials .card .icon-star i{
+    color: #f3cc3c;
+    margin: 0.2rem;
+}
+.testimonials .container-testimonials .card p{
+    margin: 1rem 2rem;
+    text-align: center;
+    color: #fff;
+}
+.contact{
+    width: 100%;
+    background: #101010;
+}
+.contact h1{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.contact .content-about{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.contact .form-contact form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.contact .form-contact form{
+    width: 24rem;
+}
+.contact .form-contact form input[type="text"]{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 4px;
+    background: #101010;
+    color: #fff;
+}
+.contact .form-contact form .email{
+    margin: .75rem 0;
+}
+.contact .form-contact form textarea{
+    border-radius: 4px;
+    width: 100%;
+    background: #101010;
+    color: #fff;
+}
+.contact .form-contact form button{
+    background: #176fbe;
+    margin-top: .75rem;
+    border-radius: 4px;
+    border: none;
+    padding: 0.25rem 0;
+}
+.contact .contact-about{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.contact .contact-about{
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-about span{
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+.contact .contact-about span i{
+    margin-right: 2rem;
+}
+.contact .contact-about .contact-icon{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.7rem;
+}
+.contact .contact-about .contact-icon i{
+    margin: 1rem;
+    font-size: 1.7rem;
+}
+.contact .contact-about p{
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+
+
+
+
+/* responsive */
+@media (max-width:991px) {
+    .menu .container-menu{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+    }
+}
